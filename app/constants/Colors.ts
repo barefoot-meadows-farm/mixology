@@ -1,26 +1,52 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Mixology app color scheme based on deep purples and rich burgundies
  */
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+// Primary color palette
+const primaryColor = '#5B4B8A'; // Deep purple
+const secondaryColor = '#8D384D'; // Rich burgundy
+const tertiaryColor = '#E9E3FF'; // Light lavender
+const quaternaryColor = '#FEE1E8'; // Soft pink
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
+    text: '#1E1E1E',
+    subtext: '#5E5E5E',
+    background: '#FFFFFF',
+    cardBackground: '#F9F9F9',
+    tint: primaryColor,
+    primary: primaryColor,
+    secondary: secondaryColor,
+    tertiary: tertiaryColor,
+    quaternary: quaternaryColor,
+    icon: primaryColor,
     tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+    tabIconSelected: primaryColor,
+    buttonText: '#FFFFFF',
+    border: '#E1E1E1',
+    tag: {
+      background: tertiaryColor,
+      text: primaryColor
+    }
   },
   dark: {
     text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
+    subtext: '#A7A7A7',
+    background: '#1E1E1E',
+    cardBackground: '#2D2D2D',
+    tint: tertiaryColor,
+    primary: primaryColor,
+    secondary: secondaryColor,
+    tertiary: tertiaryColor,
+    quaternary: quaternaryColor,
+    icon: tertiaryColor,
     tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+    tabIconSelected: tertiaryColor,
+    buttonText: '#FFFFFF',
+    border: '#3D3D3D',
+    tag: {
+      background: '#3D3D3D',
+      text: tertiaryColor
+    }
   },
 };
